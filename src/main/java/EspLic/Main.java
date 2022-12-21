@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author honey
  */
 public class Main {
+
     public static void main (String [] args){
         String nombre;
         Scanner teclado = new Scanner(System.in);
@@ -23,17 +24,25 @@ public class Main {
         System.out.println("pues es solo una orientacion segun tus gustos, aptitudes y habilidades, sin embargo\n");
         System.out.println("la decision final es tuya. Disfruta de usar esta aplicacion! :3 . \n");
         System.out.println("Espero encuentres algo que se ajuste a tus necesidades y disfruta de la carrera.\n\n");
+        String respuesta;
+        System.out.print("Deseas comenzar el programa? (y/n): ");
+        respuesta = teclado.nextLine();
+            Preguntas p1 = new Preguntas();
+            Preguntas p2 = new Preguntas();
+            Preguntas p3 = new Preguntas();
+            Preguntas p4 = new Preguntas();
+            Preguntas p5 = new Preguntas();
+            Preguntas p6 = new Preguntas();
+            Preguntas p7 = new Preguntas();
+            
+        if (respuesta == "y"){
+            
+            p1.Preguntas("Que tanto te gusta la fisica?");
         
-        int x;  //Puntuacion de Matematicas Puras
-        float x1;  //Puntuacion final de Matematicas Puras
-        int y;  //Puntuacion de Matematicas Aplicadas
-        float y1;  //Puntuacion final de Matematicas Aplicadas
-        int z;  //Puntuacion de Fisica
-        float z1;  //Puntuacion final de Fisica
-        int a;  //Puntuacion de Ingenieria Nuclear
-        float a1;  //Puntuacion final de Ingenieria Nuclear
-        int m;  //Cantidad de especialidades
-        float b; //Promedio que todavia no se como poner en vector
+        }
+
+        
+        
         
         
         
